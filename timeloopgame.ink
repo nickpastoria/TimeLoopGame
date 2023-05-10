@@ -16,7 +16,12 @@ VAR corruption = 0
 -> introduction
 
 === introduction ===
-You are a futuristic scientist tasked with creating a cure for a deadly plague. You must experiment with different combinations of colored serums to create the cure. Each loop begins with a limited set of serums.
+*You are a scientist tasked with creating a cure for a deadly plague, and humanities last hope. 
+    * *With the last sparks of life humankind was able to create these four vials with which it was thought that the cure to the otherworldly plague lies.
+    * * *They also were able to create a machine which pulls its user back to the moment the machine is set.
+    * * * *You are humanities last hope.
+    You must find the correct ingredients to undo the wretched horror plaguing the human race.
+    * * * * * [Start]
 ->restart
 = restart
 The current loop is {loop}.
