@@ -16,11 +16,14 @@ VAR corruption = 0
 -> introduction
 
 === introduction ===
-*You are a scientist tasked with creating a cure for a deadly plague, and humanities last hope. 
-    * *With the last sparks of life humankind was able to create these four vials with which it was thought that the cure to the otherworldly plague lies.
-    * * *They also were able to create a machine which pulls its user back to the moment the machine is set.
+*You are a scientist 
+Tasked with creating a cure for a deadly plague, and humanities last hope. 
+    * *With the last sparks of life humankind was able to create these four vials 
+    It was thought that the cure to the otherworldly plague lies within them.
+    * * *They also were able to create a machine 
+    Which pulls its user back to the moment the machine is set.
     * * * *You are humanities last hope.
-    You must find the correct ingredients to undo the wretched horror plaguing the human race.
+    You must find the correct ingredients, and order to undo the wretched horror plaguing the human race.
     * * * * * [Start]
 ->restart
 = restart
