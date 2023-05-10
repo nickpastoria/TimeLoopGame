@@ -11,6 +11,7 @@ VAR corruption = 0
     ~ loop += 1
     ~ tissueState = "unstable"
     ~ corruption = 0
+    The world around you blurs, time bends and twists, and you find yourself back at the start of your experiment. The taste of failure is bitter, but you know you must persevere.
 
 === start ===
 -> introduction
@@ -32,7 +33,7 @@ The current loop is {loop}.
 -> lab
 
 === lab ===
-You are in your lab. The tissue sample, a grotesque, undulating mass that emits an otherworldly glow, is currently in a state best described as {tissueState}. What will you do?
+You are in your lab. The tissue sample, a grotesque, undulating mass that emits an otherworldly glow, is currently in a state best described as... {tissueState}. What will you do?
 + [Test current setup] -> Test_Cure
 + {currentSyrums !? red}[Approach the Red Vial] -> red_confirm
 + {currentSyrums !? blue}[Approach the Blue Vial] -> blue_confirm
@@ -61,8 +62,9 @@ The Red Vial hums with a foreboding energy. Its contents, you've been told, shou
     The tissue thrashes wildly before suddenly regenerating at a rapid pace. The sight is unnatural, disturbing. You can't help but feel you're meddling with powers you don't fully understand.
     ~ tissueState = "regenerating"
     ~ corruption += 1
-- else:
-    The tissue convulses, writhing as though in pain. It returns to an unstable state. The discomfort in your mind grows.
+
+- tissueState == "stable":
+    The tissue begins to convulse uncontrollably, eventually subsiding into a grotesque, pulsating mass. It's unstable again. The weight of your actions threatens to crush you.
     ~ tissueState = "unstable"
     ~ corruption += 1
 }
@@ -127,7 +129,7 @@ The Yellow Serum, a fluid of sunlit madness, is said to trigger a regeneration p
 
 === yellow_effect ===
 {
-- tissueState == "regenerating":
+- tissueState == "responsive":
     The tissue reforms, its monstrous growth replaced by healthy cells. It's healed. But the sight of this miraculous recovery fills you with an overwhelming sense of cosmic dread.
     ~ tissueState = "healed"
     ~ corruption += 1
